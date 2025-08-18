@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS customer (
     cust_id INT PRIMARY KEY AUTO_INCREMENT,
     cust_name VARCHAR(100) NOT NULL,
     cust_address VARCHAR(255),
-    cust_mobile VARCHAR(20) CHECK (cust_mobile REGEXP '^[0-9]{10,15}$')
+    cust_mobile VARCHAR(20) 
 );
 
 -- Account Table
@@ -837,3 +837,5 @@ INSERT INTO kyc (kyc_type, kyc_number, kyc_status, cust_id) VALUES
 ('Voter ID', 'VOT6317221', 'Failed', 148),
 ('Voter ID', 'VOT5570277', 'Failed', 149),
 ('Voter ID', 'VOT3593632', 'Done', 150);
+
+
